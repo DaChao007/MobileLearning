@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow_custom.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\9e80194e59ddc9348e5fd29209aae801f2d8e753\\output\\res\\layout-v11\\notification_template_big_media_narrow_custom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_narrow.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\9e80194e59ddc9348e5fd29209aae801f2d8e753\\output\\res\\layout-v11\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\9e80194e59ddc9348e5fd29209aae801f2d8e753\\output\\res\\layout-v11\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_action.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\9e80194e59ddc9348e5fd29209aae801f2d8e753\\output\\res\\layout-v11\\notification_media_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_media_cancel_action.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\9e80194e59ddc9348e5fd29209aae801f2d8e753\\output\\res\\layout-v11\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\release\\layout-v11\\notification_template_big_media_custom.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\9e80194e59ddc9348e5fd29209aae801f2d8e753\\output\\res\\layout-v11\\notification_template_big_media_custom.xml"
+    }
+]

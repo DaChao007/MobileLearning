@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiger.mobilelearning.activity.CourseDetailsActivity">
+
+    <!--带视频 简介目录的课程详情界面 -->
+    <com.example.tiger.mobilelearning.view.JCVideoPlayerVideo
+        android:id="@+id/videoplayer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="100%" />
+
+    <TextView
+        android:id="@+id/courseName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="课程名称"
+        app:layout_heightPercent="5%"
+        app:layout_marginLeftPercent="4%"
+        app:layout_paddingTopPercent="2%"
+        app:layout_textSizePercent="3%"
+        app:layout_widthPercent="80%" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="5%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:id="@+id/courseCreator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="创建者:武丽阳"
+            app:layout_marginLeftPercent="4%"
+            app:layout_textSizePercent="50%" />
+
+        <TextView
+            android:id="@+id/courseTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/courseCreator"
+            android:text="|   播放时长：39分34秒"
+            app:layout_marginLeftPercent="3%"
+            app:layout_textSizePercent="50%" />
+
+        <TextView
+            android:id="@+id/courseView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/courseTime"
+            android:text="|"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginRightPercent="2%"
+            app:layout_textSizePercent="50%" />
+
+        <ImageView
+            android:id="@+id/courseExam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/courseView"
+            android:src="@drawable/img_kaoshino" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/dimgray"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginLeftPercent="4%"
+        app:layout_marginRightPercent="4%"
+        app:layout_marginTopPercent="1%"
+        app:layout_widthPercent="92%" />
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/courseSelected"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="5%"
+        app:layout_paddingTopPercent="2%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="选集播放"
+            app:layout_heightPercent="100%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_textSizePercent="60%"
+            app:layout_widthPercent="80%" />
+
+        <TextView
+            android:id="@+id/videoNum"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="共3集"
+            app:layout_heightPercent="100%"
+            app:layout_textSizePercent="40%"
+            app:layout_widthPercent="20%" />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <ListView
+        android:id="@+id/courseListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@null"
+        app:layout_heightPercent="15%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="100%"></ListView>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/dimgray"
+        app:layout_heightPercent="0.1%"
+        app:layout_marginLeftPercent="4%"
+        app:layout_marginRightPercent="4%"
+        app:layout_marginTopPercent="2%"
+        app:layout_widthPercent="92%" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

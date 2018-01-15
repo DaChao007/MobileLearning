@@ -1,0 +1,7 @@
+#Mon Jan 15 10:38:54 CST 2018
+base.0=C\:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_eaa8c7d61f3ba2b51b974b01271e5438d62cb235
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_533b9957cd028a7d7f74c76e1577bb73ba45ffb2\\classes.dex
+base.1=C\:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_533b9957cd028a7d7f74c76e1577bb73ba45ffb2
+file.0=C\:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_eaa8c7d61f3ba2b51b974b01271e5438d62cb235\\classes.dex

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiger.mobilelearning.activity.mobilelearningactivity.FeedbackActivity">
+
+    <!-- 我的记录里的意见反馈界面-->
+
+    <include
+        layout="@layout/titleandback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#f8f8f8"
+        app:layout_heightPercent="6%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:text="分类标签"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_textSizePercent="50%"
+            app:layout_widthPercent="100%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="14%"
+        app:layout_widthPercent="100%">
+
+        <Button
+            android:id="@+id/suggestBut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:background="#f9f9f9"
+            android:text="功能建议"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="7%"
+            app:layout_textSizePercent="18%"
+            app:layout_widthPercent="22%" />
+
+        <Button
+            android:id="@+id/problemBut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/suggestBut"
+            android:background="#f9f9f9"
+            android:text="课程问题"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="8%"
+            app:layout_textSizePercent="18%"
+            app:layout_widthPercent="22%" />
+
+        <Button
+            android:id="@+id/opinionBut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/problemBut"
+            android:background="#f9f9f9"
+            android:text="其他意见"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="8%"
+            app:layout_textSizePercent="18%"
+            app:layout_widthPercent="22%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#f8f8f8"
+        app:layout_heightPercent="6%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="反馈内容"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_textSizePercent="50%"
+            app:layout_widthPercent="100%"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="100%">
+
+        <EditText
+            android:id="@+id/feedbackEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/edit_feedback"
+            android:hint="请填写反馈的内容"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:padding="5dp"
+            android:textSize="14sp"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginRightPercent="3%"
+            app:layout_widthPercent="94%" />
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="40%"
+            app:layout_marginLeftPercent="3%"
+            app:layout_marginRightPercent="3%"
+            app:layout_widthPercent="94%">
+
+            <ImageView
+                android:id="@+id/uploadImg"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img_img"
+                android:visibility="gone"
+                app:layout_heightPercent="70%"
+                app:layout_marginLeftPercent="7%"
+                app:layout_widthPercent="14%" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#f8f8f8"
+        app:layout_heightPercent="6%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:text="联系方式"
+            app:layout_heightPercent="60%"
+            app:layout_marginLeftPercent="5%"
+            app:layout_textSizePercent="50%"
+            app:layout_widthPercent="100%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <EditText
+        android:id="@+id/contactEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/edit_feedback"
+        android:padding="5dp"
+        android:textSize="14sp"
+        app:layout_heightPercent="7%"
+        app:layout_marginLeftPercent="3%"
+        app:layout_marginRightPercent="3%"
+        android:hint="请输入您的手机号或邮箱"
+        app:layout_widthPercent="94%" />
+
+    <Button
+        android:id="@+id/feedbackBut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#fe5656"
+        android:text="提 交"
+        android:textColor="@color/white"
+        app:layout_heightPercent="8%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="90%" />
+
+</com.zhy.android.percent.support.PercentLinearLayout>

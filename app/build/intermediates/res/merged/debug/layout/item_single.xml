@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/singleContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text=""
+        app:layout_heightPercent="16%"
+        app:layout_paddingPercent="2%"
+        app:layout_widthPercent="100%" />
+
+    <ListView
+        android:id="@+id/singListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="58%"
+        app:layout_widthPercent="100%"
+        android:choiceMode="singleChoice"
+        android:divider="@null"></ListView>
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--利用include复用的顶部布局 -->
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/backButImg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/but_back"
+            app:layout_heightPercent="50%"
+            app:layout_marginLeftPercent="1%"
+            app:layout_widthPercent="10%" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="12%"
+            app:layout_marginRightPercent="5%"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:text="标题"
+            android:textColor="#282828"
+            android:textSize="25sp" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+</com.zhy.android.percent.support.PercentLinearLayout>

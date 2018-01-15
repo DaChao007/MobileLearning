@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tiger.mobilelearning.activity.mobilelearningactivity.HomeTrainerActivity">
+
+    <!-- 首页  角色：训导员特殊首页-->
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="100%">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_home"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="100%"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <View
+            android:id="@+id/homeView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            app:layout_heightPercent="1%"
+            app:layout_widthPercent="40%"/>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/advancedSchool"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_above="@id/homeView"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            app:layout_marginRightPercent="2%"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="40%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/but_kuang_jing"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%" />
+
+            <ImageView
+                android:id="@+id/yuanadvanced"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/but_yuan_jing"
+                app:layout_heightPercent="25%"
+                app:layout_marginLeftPercent="10%"
+                app:layout_widthPercent="13%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/yuanadvanced"
+                android:text="进阶学堂"
+                app:layout_heightPercent="50%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_textSizePercent="40%"
+                app:layout_widthPercent="60%" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/noviceSevenDays"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_above="@id/advancedSchool"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8%"
+            app:layout_marginBottomPercent="6%"
+            app:layout_marginRightPercent="12%"
+            app:layout_widthPercent="40%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/but_kuang_jing"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%" />
+
+            <ImageView
+                android:id="@+id/noviceyuan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/but_yuan_jing"
+                app:layout_heightPercent="25%"
+                app:layout_marginLeftPercent="10%"
+                app:layout_widthPercent="13%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/noviceyuan"
+                android:text="新手七天"
+                app:layout_heightPercent="50%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_textSizePercent="40%"
+                app:layout_widthPercent="60%" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/specialClass"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/homeView"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8%"
+            app:layout_marginRightPercent="2%"
+            app:layout_marginTopPercent="6%"
+            app:layout_widthPercent="40%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/but_kuang_jing"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%" />
+
+            <ImageView
+                android:id="@+id/specialyuan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/but_yuan_jing"
+                app:layout_heightPercent="25%"
+                app:layout_marginLeftPercent="10%"
+                app:layout_widthPercent="13%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/specialyuan"
+                android:text="专题课堂"
+                app:layout_heightPercent="50%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_textSizePercent="40%"
+                app:layout_widthPercent="60%" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/notification"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_above="@id/noviceSevenDays"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8%"
+            app:layout_marginRightPercent="25%"
+            app:layout_marginBottomPercent="6%"
+            app:layout_widthPercent="40%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/but_kuang_jing"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/notificationyuan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/but_yuan_jing"
+                app:layout_heightPercent="25%"
+                app:layout_marginLeftPercent="10%"
+                app:layout_widthPercent="13%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/notificationyuan"
+                android:text="消息通知"
+                app:layout_heightPercent="50%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_textSizePercent="40%"
+                app:layout_widthPercent="60%" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/myrecord"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/specialClass"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8%"
+            app:layout_marginRightPercent="12%"
+            app:layout_marginTopPercent="6%"
+            app:layout_widthPercent="40%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/but_kuang_jing"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%" />
+
+            <ImageView
+                android:id="@+id/myrecordyuan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/but_yuan_jing"
+                app:layout_heightPercent="25%"
+                app:layout_marginLeftPercent="10%"
+                app:layout_widthPercent="13%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="我的记录"
+                app:layout_heightPercent="50%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_textSizePercent="40%"
+                app:layout_widthPercent="60%"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/myrecordyuan"
+                android:layout_toEndOf="@+id/myrecordyuan" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/trainingProgram"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/myrecord"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:layout_heightPercent="8%"
+            app:layout_marginRightPercent="25%"
+            app:layout_marginTopPercent="6%"
+            app:layout_widthPercent="40%">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/but_kuang_jing"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="100%" />
+
+            <ImageView
+                android:id="@+id/trainingProgramyuan"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/but_yuan_jing"
+                app:layout_heightPercent="25%"
+                app:layout_marginLeftPercent="10%"
+                app:layout_widthPercent="13%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="培训管理"
+                app:layout_heightPercent="50%"
+                app:layout_marginLeftPercent="5%"
+                app:layout_textSizePercent="40%"
+                app:layout_widthPercent="60%"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/trainingProgramyuan" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <include
+        layout="@layout/titleandback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" />
+</com.zhy.android.percent.support.PercentFrameLayout>

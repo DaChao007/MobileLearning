@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiger.mobilelearning.activity.mobilelearningactivity.SingleChoiceActivity">
+
+    <!--单选界面 -->
+
+    <include
+        layout="@layout/titleandback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F5F5F5"
+        app:layout_heightPercent="6%"
+        app:layout_widthPercent="100%">
+
+        <ImageView
+            android:id="@+id/singleTypeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/img_danxuanti"
+            app:layout_marginLeftPercent="4%" />
+
+        <TextView
+            android:id="@+id/singleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/singleTypeImg"
+            android:text="【餐前准备工作站SOC】考试题"
+            app:layout_marginLeftPercent="3%"
+            app:layout_textSizePercent="36%" />
+
+        <TextView
+            android:id="@+id/singleZongNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="/10"
+            app:layout_marginRightPercent="2%"
+            app:layout_textSizePercent="36%" />
+
+        <TextView
+            android:id="@+id/singleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/singleZongNum"
+            android:text="1"
+            android:textColor="#fe5757"
+            app:layout_marginRightPercent="1%"
+            app:layout_textSizePercent="50%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.example.tiger.mobilelearning.view.NoScrollViewPager
+        android:id="@+id/singleViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="74%"
+        app:layout_widthPercent="100%"></com.example.tiger.mobilelearning.view.NoScrollViewPager>
+
+    <include
+        android:id="@+id/noExamsImgIn"
+        layout="@layout/not_failedtoload"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="74%"
+        app:layout_widthPercent="100%"
+        android:visibility="gone" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%"
+        app:layout_widthPercent="100%">
+
+        <ImageView
+            android:id="@+id/upQuestionBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_shangyiti"
+            app:layout_marginLeftPercent="4%"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/nextQuestionBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_xiayiti"
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="4%" />
+
+        <ImageView
+            android:id="@+id/carryOut"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="交  卷"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="4%"
+            android:src="@drawable/img_submit"/>
+
+
+            <TextView
+                android:id="@+id/countdownText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="倒计时: 29:59" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

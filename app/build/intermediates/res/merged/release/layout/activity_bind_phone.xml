@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiger.mobilelearning.activity.BindPhoneActivity">
+
+    <!--登录成功后需要绑定手机页面-->
+
+    <include
+        layout="@layout/titleandback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="手机号"
+            app:layout_heightPercent="100%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginTopPercent="35%"
+            app:layout_textSizePercent="30%"
+            app:layout_widthPercent="22%" />
+
+        <EditText
+            android:id="@+id/nearPhone"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/phone"
+            android:hint="请输入绑定的手机号码"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="70%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="验证码"
+            app:layout_heightPercent="100%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginTopPercent="35%"
+            app:layout_textSizePercent="30%"
+            app:layout_widthPercent="22%" />
+
+        <EditText
+            android:id="@+id/codeEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_toRightOf="@+id/code"
+            android:hint="请输入验证码"
+            android:maxLength="4"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="45%" />
+
+        <TextView
+            android:id="@+id/getCode"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/codeEdit"
+            android:background="@drawable/forgetpwdtrue"
+            android:gravity="center"
+            android:text="获取验证码"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            app:layout_heightPercent="70%"
+            app:layout_marginLeftPercent="2%"
+            app:layout_widthPercent="24%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:id="@+id/nearPaw"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="新密码"
+            app:layout_heightPercent="100%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginTopPercent="35%"
+            app:layout_textSizePercent="30%"
+            app:layout_widthPercent="22%" />
+
+        <EditText
+            android:id="@+id/nearPawEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/nearPaw"
+            android:layout_toRightOf="@+id/nearPaw"
+            android:hint="请输入新密码"
+            android:inputType="textPassword"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="70%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="100%">
+
+        <TextView
+            android:id="@+id/nearPawOk"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="确认密码"
+            app:layout_heightPercent="100%"
+            app:layout_marginLeftPercent="4%"
+            app:layout_marginTopPercent="35%"
+            app:layout_textSizePercent="30%"
+            app:layout_widthPercent="22%" />
+
+        <EditText
+            android:id="@+id/nearPawOkEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_toRightOf="@id/nearPawOk"
+            android:hint="请再次输入新密码"
+            android:inputType="textPassword"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="70%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <Button
+        android:id="@+id/forgetNextstep"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_but_login"
+        android:text="完 成"
+        android:textColor="@color/white"
+        app:layout_heightPercent="8%"
+        app:layout_marginLeftPercent="10%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="80%" />
+</com.zhy.android.percent.support.PercentLinearLayout>

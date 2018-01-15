@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiger.mobilelearning.activity.mobilelearningactivity.MyExamActivity">
+
+    <!-- 我的记录里我的考试界面-->
+
+    <include
+        layout="@layout/titleandback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/examTab"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="7%"
+        app:layout_widthPercent="100%"
+        app:tabIndicatorColor="@color/indigo"
+        app:tabTextColor="@color/gray"
+        app:tabSelectedTextColor="@color/indigo"></android.support.design.widget.TabLayout>
+
+    <com.example.tiger.mobilelearning.view.NoScrollViewPager
+        android:id="@+id/examViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.example.tiger.mobilelearning.view.NoScrollViewPager>
+</com.zhy.android.percent.support.PercentLinearLayout>

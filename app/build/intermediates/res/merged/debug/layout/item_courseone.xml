@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/noExamsImgIn"
+        layout="@layout/not_failedtoload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_gridtop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="课程名称" />
+
+        <ImageView
+            android:id="@+id/courseStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_passed"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/butgray"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+        -->
+
+    <com.example.tiger.mobilelearning.view.NoScrollGridView
+        android:id="@+id/courseoneGridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_gridbottom"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="2dp"
+        android:numColumns="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp"></com.example.tiger.mobilelearning.view.NoScrollGridView>
+</LinearLayout>

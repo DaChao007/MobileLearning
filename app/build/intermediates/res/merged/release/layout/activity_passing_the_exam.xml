@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.tiger.mobilelearning.activity.PassingTheExamActivity">
+
+    <!--考试通过显示的界面-->
+
+    <include
+        layout="@layout/titleandback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="100%" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/butgray" />
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="50%"
+        app:layout_widthPercent="100%"
+        android:background="@drawable/img_examnumback">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="一步一个脚印，你是最棒的！"
+            android:textColor="#a1a1a1"
+            app:layout_heightPercent="8%"
+            app:layout_marginTopPercent="5%"
+            app:layout_textSizePercent="4%" />
+
+        <TextView
+            android:id="@+id/passingFraction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="90分"
+            android:textColor="#fe5757"
+            app:layout_textSizePercent="12%" />
+
+        <com.example.tiger.mobilelearning.view.RoundProgressBar
+            android:id="@+id/passRoundProgressBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="50%h"
+            android:layout_centerInParent="true"
+            android_custom:roundColor="#F5F5F5"
+            android_custom:roundProgressColor="#FE5757"
+            android_custom:textIsDisplayable="false"
+            android_custom:roundWidth="4dip" />
+
+        <TextView
+            android:id="@+id/passingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passingFraction"
+            android:layout_centerHorizontal="true"
+            android:text="22分20秒"
+            android:textColor="#fe5757"
+            app:layout_marginTopPercent="25%"
+            app:layout_textSizePercent="5%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passingTime"
+            android:layout_centerHorizontal="true"
+            android:text="总用时"
+            app:layout_marginTopPercent="5%"
+            app:layout_textSizePercent="5%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_heightPercent="12%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="100%">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/passingNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="24个"
+                android:textColor="#242424"
+                app:layout_widthPercent="33%" />
+
+            <TextView
+                android:id="@+id/passingAllNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="30个"
+                android:textColor="#242424"
+                app:layout_widthPercent="33%" />
+
+            <TextView
+                android:id="@+id/wrongNum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="7个"
+                android:textColor="#242424"
+                app:layout_widthPercent="33%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="答对"
+                android:textColor="#a1a1a1"
+                app:layout_widthPercent="33%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="测试总数"
+                android:textColor="#a1a1a1"
+                app:layout_widthPercent="33%" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="答错"
+                android:textColor="#a1a1a1"
+                app:layout_widthPercent="33%" />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="7%"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="100%">
+
+        <Button
+            android:id="@+id/passingUnderBut"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="完  成"
+            app:layout_heightPercent="98%"
+            app:layout_marginLeftPercent="10%"
+            app:layout_widthPercent="80%"
+            android:background="@drawable/but_back_passingbottom"
+            android:textColor="@color/white"/>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

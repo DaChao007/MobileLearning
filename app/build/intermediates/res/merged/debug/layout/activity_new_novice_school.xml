@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiger.mobilelearning.activity.mobilelearningactivity.NewNoviceSchoolActivity">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_heightPercent="8%"
+    app:layout_widthPercent="100%">
+
+    <include
+        layout="@layout/titleandback"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%"
+            app:layout_widthPercent="100%" />
+
+        <TextView
+            android:id="@+id/textClassTable"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="课程表"
+            app:layout_heightPercent="40%"
+            app:layout_widthPercent="15%" />
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_heightPercent="92%"
+        app:layout_widthPercent="100%">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/newTabLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            style="@style/MyCustomTabLayout"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="25%"></android.support.design.widget.TabLayout>
+
+        <com.example.tiger.mobilelearning.view.NoScrollViewPager
+            android:id="@+id/newViewPager"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="75%"></com.example.tiger.mobilelearning.view.NoScrollViewPager>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>

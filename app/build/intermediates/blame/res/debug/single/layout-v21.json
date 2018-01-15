@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\b5c65a79509c131a59871ff17e9d58641cda5150\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\b5c65a79509c131a59871ff17e9d58641cda5150\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\b5c65a79509c131a59871ff17e9d58641cda5150\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\Tiger\\AndroidStudioProjects\\MobileLearning\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Tiger\\.android\\build-cache\\b5c65a79509c131a59871ff17e9d58641cda5150\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]
